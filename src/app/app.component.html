@@ -9,6 +9,8 @@
     (mousemove)="onPan($event)"
     (mouseup)="endPan()"
     (mouseleave)="endPan()"
+    (dblclick)="zoomIn($event)"
+    (contextmenu)="zoomOut($event); $event.preventDefault()"
   >
     <img
       src="assets/example_image5.jpg"
